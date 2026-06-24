@@ -30,7 +30,7 @@ device = (
 
 cnn_model = SimpleCNN()
 cnn_model.load_state_dict(
-    torch.load("models/cifar10_cnn.pt", map_location=device)
+    torch.load("cifar10_cnn.pt", map_location=device)
 )
 cnn_model.to(device)
 cnn_model.eval()
